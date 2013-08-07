@@ -1,0 +1,37 @@
+1. Q: What tool is most appropriate for changing all instances of foo to bar in a file?
+   A: sed
+2. Q: What is the result of running:
+      yes | nl | head | tail -n +10 | awk '{print $1}'
+   A: 10
+3. Q: Which of the following tools is most appropriate for debugging a linking issue?
+   A: ldd (ldd  prints  the  shared  libraries  required by each program or shared library specified on the command line)
+4. Q: Which of the following command/flag combinations enable the use of multiple processors?
+   A: xargs -P
+5. Q: Which of the following commands will list all python files containing the string asdf under the current directory?
+   A: find -type f -name '*py' -print0 | xargs -0 grep -l -i 'asdf'
+6. Q: You have a five million row table in tab-delimited text format named foo.txt. Which of the following commands would be useful for finding the sum of the values in the fifth column, taken over all rows which have the phrase transcription factor as the entry in their third column?
+   A: awk
+7. Q: What does the following command do?
+      curl -s https://spark-public.s3.amazonaws.com/startup/data/NC_007779.ptt | wc -l
+   A: Counts the number of lines in the ptt file
+8. Q: Which of the following commands counts the number of rows in NC_007779.ptt that have the word 'protein' in them?
+   A: cat NC_007779.ptt | grep protein | wc -l
+      grep protein NC_007779.ptt | wc -l
+9. Q: Which of the following commands prints the 123rd line of NC_007779.ptt?
+   A: awk 'NR==123' NC_007779.ptt
+      cat NC_007779.ptt | head -123 | tail -1
+      sed -n '123p' NC_007779.ptt
+10. Q: Which of the following prints the number of bytes in NC_007779.ptt?
+    A: echo `wc -c NC_007779.ptt`
+11. Q: Which command would you use to create a symbolic link to a file?
+    A: ln -s
+12. Q: Which git command syncs the remote repository with all the changes you've made in your local git repository?
+    A: git push
+13. Q: For your new startup, you plan to commit your git repository to two different locations. (eg. github and heroku)
+Say you have already pushed your local repository to github and would now like to push it heroku as well.
+Which of the following git commands would you use to accomplish this?
+    A: git remote add
+14. Q: What is the SHA-1 hash of the first commit of the git repository https://github.com/startup-class/setup.git?
+    A: 50ff86b66254abeb42b2aa5eabe915e18c359ac0
+15. Q: Why is it good practice to have a setup.git and dotfiles.git?
+    A: It makes it easy to rebuild a remote environment just like the       one you've been using, and eases deployment.

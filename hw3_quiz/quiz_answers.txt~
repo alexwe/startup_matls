@@ -1,0 +1,7 @@
+1. sed
+2. 10
+3. ln (?)
+4. xargs -P
+5. find -type f -name '*py' -print0 | xargs -0 grep -l -i 'asdf'
+5. awk
+6. 
