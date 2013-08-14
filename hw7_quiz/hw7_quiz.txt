@@ -1,0 +1,51 @@
+1. Which of the following describes the purpose of Procfile in this app?
+It tells Heroku which commands are run by your application's dynos
+2. Which of the following describes the purpose of web.js?
+It defines JS functions that are run when particular HTTP resources are requested
+3. Which of the following describes the purpose of model/index.js?
+It sets up the connection between the local or remote PostgreSQL database and the Sequelize ORM
+4. Which of the following describes the purpose of the bitdb0 Postgres database?
+? It's defined (along with user and pass) in the .pgpass file, created by pgsetup.sh, connected to an Order object via Sequelize in model/index.js, and used as a local database for debugging
+5. Which of the following describes the purpose of heroku config:push?
+It pushes the variables defined in .env to the remote running Heroku app
+6. Which of the following describes the purpose of the foreman start invocation?
+It allows you to simulate running Heroku locally, by starting up "dynos" and using the local .env file
+7. Why might it be a good idea to separate polling of Coinbase via /refresh_orders from the loading of the /order page?
+It's better to locally cache the new orders in the database via /refresh_orders than to issue a new API call to Coinbase every time the /order page is loaded
+8. Which of the following describes the purpose of model/order.js? (Hint: look at Sequelize's model definition syntax.)
+It sets up the mapping between the fields of an Order object (coinbase_id, amount, time) and the corresponding STRING, FLOAT, and STRING fields of the Orders table in the bitdb0 database.
+9. Which of the following describes the purpose of views/orders.ejs?
+It describes how an array of Order objects will be rendered in a table. The template is loaded and populated with just such an array by web.js when the /order relative URL is loaded.
+10. Which of the following describes the purpose of index.html in this app?
+It is the homepage and what people first see when they encounter the app
+11. Which of the following describes the purpose of .env? (Hint: see heroku config).
+It is a file of environmental variables, used to separate sensitive variables (like API keys) from the rest of the codebase
+12. Which of the following describes the purpose of .env.dummy?
+It is a template file that is meant to be copied into .env and then edited with a personal Coinbase API key
+13. Which of the following describes the purpose of .pgpass?
+It is used by pgsetup.sh to create a local Postgres database named bitdb0 which can be accessed by username ubuntu with pass bitpass0. It is also used by models/index.js to set up a connection between a Sequelize Order class and a table in this same bitdb0
+14. Which of the following describes the purpose of .gitignore in the context of this app?
+It keeps files we don't want out of a git repo, like the .env file
+15. Which of the following describes the purpose of package.json?
+It specifies which node modules are used in this app along with the relevant version of node and npm, and is used by Heroku
+16. Which of the following describes the purpose of pgsetup.sh?
+It parses .pgpass and creates a Postgres database with the given name and user. It also sets up a symlink to .pgpass in the home directory such that psql can be used, and creates a simple test table to confirm that everything worked.
+17. Which of the following describes the purpose of setup-ssjs.sh?
+It pulls in the node packages, sets up most of Heroku, and invokes pgsetup.sh to create the database as well.
+18. What does the async module in web.js do (Hint: see here)?
+It provides higher order functions for working with asynchronous Javascript, and is specifically used to add each order to the database independently in web.js
+19. What does Express do (Hint: see here)?
+It's a web framework for parsing HTTP requests and generating HTTP responses, and used to set up the routes for the app
+20. What does Sequelize do (Hint: see here)?
+It's a popular Object/Relational Mapper for node, used in this case to connect to a local or remote postgres database in models/index.js and then set up a mapping in models/order.js between the relational DB table named Order and the Order JS object.
+21. What does Postgres do in this app (Hint: see here)?
+It's used both locally and remotely. Locally, we set up a database named bitdb0 as specified in .pgpass using pgsetup. Whether remote or local, the database is read and written from models/order.js.
+22. What fields did we choose to record for each Order object in models/order.js?
+coinbase_id, amount, time
+23. What does the async.forEach(orders_json.orders, addOrder, ... bit do?
+It calls addOrder asynchronously on each item in the orders_json.orders array and redirects to "/orders" when all Orders have been added successfully
+24. Which of the following are reasons why Coinbase might choose to represent all transaction amounts in Satoshis using total_btc_cents rather than using a floating point variable?
+- Because integer arithmetic is exact, while floating point arithmetic can cause rounding errors - and you generally do not want rounding errors in an application dealing with money.
+- The Bitcoin protocol only specifies subdivision up to 8 decimal places today, though it might be extended tomorrow, so an integer representation down to 8 decimals is in some sense the canonical representation
+25. What does the __dirname invocation do?
+It allows a running node script to determine the directory in which it is being run
