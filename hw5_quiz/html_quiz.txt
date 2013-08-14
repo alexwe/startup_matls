@@ -1,0 +1,24 @@
+1. What's an example of a closing tag in this document?
+</h1>
+2. In the above, what is an example of an HTML opening tag alone?
+<h1>
+3. Which is an example of an HTML attribute name?
+lang
+4. Which is an example of an HTML attribute value?
+"Hyper Text Markup Language"
+5. Which is an example of a full HTML element, including opening and closing tags?
+<h1>Main heading in my document</h1>
+6. What is an example of an HTML comment?
+<!-- Note that it is "h" + "1", not "h" + the letter "one" -->
+7. Which of the following elements specifies the character set that is being used in the document? (Hint: see here and here).
+<meta charset="utf-8" />
+8. What's a short summation of the difference between a markup language like HTML and a programming language like Javascript? (Hint: see here and here).
+A markup language specifies information, not instructions
+9. Which of the following are true statements about the Document Object Model (DOM)? (Hint: see here, here, and here).
+- It is an API for HTML documents that represents them to client languages with a logical structure similar to a tree (or grove)
+- It is an API that allows programmatic inspection and modification of an HTML document, often from a Javascript program
+- It is an API that is inconsistently implemented between browsers, and which has historically been the source of many bugs (see here).
+- It is the standard way to represent and manipulate the contents of an HTML document programmatically
+- It is an API that is accessible from methods on the document object in Javascript
+10. What is the DOCTYPE?
+? A declaration of the HTML version used in a document

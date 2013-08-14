@@ -1,0 +1,20 @@
+1. Which of the following commands will show you the history of past git commits?
+git log
+2. Which of the following commands will add locally edited code to the git staging area?
+git add
+3. Which of the following commands will discard local changes to a single file named index.html? Note that this one is tricky.
+git checkout index.html
+4. Which of the following commands will create a git commit from staged changes?
+git commit -m "Made commit"
+5. Which of the following commands will create a new local git branch named foo?
+git checkout -b foo
+6. Which of the following commands will display the current and active branches?
+git branch
+7. Which of the following commands will transfer local commits to the origin?
+git push origin master
+8. Which of the following commands can be used to determine what remote repository the 'origin' corresponds to?
+git remote -v
+9. Which of the following commands will sync the local repository by pulling down changes made to a remote repository?
+git pull
+10. Which of the following commands will list files containing the string 'foo' in the current git repository?
+git grep -l foo

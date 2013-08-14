@@ -1,0 +1,9 @@
+1. Which of the following is an example of Infrastructure-as-a-Service (IAAS)?
+AWS
+2. Which of the following is an example of Platform-as-a-Service (PAAS)?
+Heroku
+3. 
+- git is a free open-source project, while Github is a freemium service provided by a technology company
+- You can use git without Github.
+- git is a command line tool, while Github is a cloud service
+- You can simultaneously use Github and other hosts like Bitbucket or Google Code for your git repositories, due to git's distributed version control model

@@ -1,0 +1,12 @@
+1. What is the purpose of Cascading Style Sheets (CSS)?
+To separate a document's styling/appearance from informational content
+2. Which statements describe the CSS box model?
+- By changing the values of box-model-related properties we can achieve 2D layouts of HTML elements on a webpage
+- It was historically implemented differently in the Internet Explorer family of browsers
+- It is now deprecated in favor of WebGL for 3D layouts
+3. Which statements are accurate about why CSS inheritance is useful?
+- It reduces the amount of redundancy in a CSS file
+- It allows you to specify a style once and have it apply to all children of an element.
+- The inheritance cascade is a systematic way to determine which of several possible styles applies to an element
+4. What is a CSS selector?
+The part of a CSS rule that specifies exactly which DOM element(s) the CSS rule applies to.

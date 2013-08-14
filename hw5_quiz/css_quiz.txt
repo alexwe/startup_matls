@@ -1,0 +1,35 @@
+1. What is the purpose of Cascading Style Sheets (CSS)?
+To separate a document's styling/appearance from informational content
+2. Which statements describe the CSS box model?
+- It was historically implemented differently in the Internet Explorer family of browsers
+- By changing the values of box-model-related properties we can achieve 2D layouts of HTML elements on a webpage
+- It is the model that describes the content of the space taken by an element in an HTML page
+3. Which statements are accurate about why CSS inheritance is useful?
+- It reduces the amount of redundancy in a CSS file
+- It allows you to specify a style once and have it apply to all children of an element.
+- The inheritance cascade is a systematic way to determine which of several possible styles applies to an element
+4. What is a CSS selector?
+The part of a CSS rule that specifies exactly which DOM element(s) the CSS rule applies to.
+5. In the CSS box model, what is the difference between margins and padding?
+The margin specifies the space between elements, while the padding is the space between the content of an element and its border
+6. Which of the following are ways that CSS rules can be included in a webpage?
+- Importing CSS via the @import rule
+- Inline CSS via style attributes
+- External CSS via <link> elements
+- Embedding CSS via <style> elements
+- CSS rules can be applied dynamically after the page loads by Javascript, via JQuery's css method
+7. What is a CSS reset?
+A CSS style file imported before other styles are applied, which overrides browser defaults and imposes the same starting font sizes, margins, and the like
+8. The HTML DOM API suggests that it is useful to conceptualize a webpage's structure as a tree or grove (i.e. a collections of tree). While this maps well to a huge online book with a linear hierarchy of nested chapters and subchapters, how do documents that visually correspond to layouts of 2D rectangles fit into this conceptual framework?
+CSS rules are used to specify the margins, padding, position, display, floating, and other characteristics of HTML elements.
+strong { color: red; }
+.lead { font-size: 14px; font-weight: bold; }
+#special { display: block; background-color: yellow; }
+9. which of the following corresponds to a CSS rule in the above CSS snippet?
+strong { color: red; }
+10. Which of the following corresponds to a CSS class in the above CSS snippet?
+.lead
+11. Which of the following corresponds to a CSS id in the above CSS snippet?
+#special
+12. Which of the following corresponds to a CSS property in the above CSS snippet?
+color

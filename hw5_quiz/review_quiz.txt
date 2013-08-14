@@ -1,0 +1,57 @@
+1. Which of the following is an example of Infrastructure-as-a-Service (IAAS)?
+AWS
+2. Which of the following is an example of Platform-as-a-Service (PAAS)?
+Heroku
+3. Which of the following are accurate statements about git vs. Github?
+- git is a free open-source project, while Github is a freemium service provided by a technology company
+- You can use git without Github.
+- git is a command line tool, while Github is a cloud service
+- You can simultaneously use Github and other hosts like Bitbucket or Google Code for your git repositories, due to git's distributed version control model
+4. Which statements are generally true about IAAS?
+- An IAAS service allows you to provision, tear down, and set up new virtual machines programmaticall
+- An IAAS service provides command line and/or root access to its machines.
+5. Which statements are generally true about PAAS?
+- A PAAS service usually stipulates conventions for how your source code should be laid out to facilitate deployment
+- A PAAS service usually provides a blackbox deployment API that "just works" to get your site on the web, without giving much access to internal details
+- A PAAS service asks the end user to do less configuration than a IAAS service, at the expense of less flexibility
+6. What are true statements about Linux and Unix?
+- Linux is a feat of reverse engineering of AT&T's proprietary Unix OS, compliant with the POSIX standard 
+- Linux is a free, open-source operating system
+- Linux shares no direct code with Unix (as established definitively by the SCO Lawsuit)
+- The Android OS is based on Linux
+7. Which are valid reasons for AWS to use virtual machines for EC2 rather than give direct access to physical servers?
+- VMs can allow partitioning of the same underlying 8-CPU hardware into 1, 2, 4, 8, or possibly more separate instances, thereby increasing utilization
+- Using VMs provides a layer of safety between the physical machine and untrusted user code
+- Virtual machines can be more easily wiped and restored
+8. What are STDIN, STDOUT, and STDERR?
+- The conventional ways to pipe data into a Unix command line program, to output data, and to output any error messages
+- The three standard streams that Unix programs use to receive and send information to their environment
+9. What is an advantage of the screen command line tool?
+It allows you to edit code on a remote machine, disconnect, and resume where you left off
+10. Why is it better to edit code with a text editor like emacs or vim than a WYSIWYG word processor like MS Word?
+- A word processor is primarily intended to produce documents which are read by humans, while a text editor is capable of producing documents that are read by machines
+- A word processor will not show you the raw characters which you are editing, but these can be important for computer programming
+11. Why do we include "staging" in the dev/staging/production flow?
+Because the dev environment is not exactly the same as the production environment, while staging is
+12. Which of these are disadvantages of editing code directly on a live server, and using the deployment server as the sole source code repository?
+- Contention if multiple engineers try to edit the site at the same time
+- Inability to do A/B testing
+- Inability to rollback buggy features
+- Lack of source code backups
+13. Roughly what percentage of the world has smartphones as of June 2013, according to Mary Meeker's Internet Trends presentation?
+20%
+14. What's Apple's primary monetization channel for mobile devices?
+? Hardware sales of iPhones and iPads
+15. What's Google's primary monetization channel for mobile devices?
+Mobile advertising
+16. Which of the following are true statements about Android and ChromeOS?
+- Android is based on a model of significant native-client-centric computation and storage/state, while ChromeOS is based on an assumption of less powerful clients and cloud-centric computation
+- Android apps are written in Java while ChromeOS apps are written in Javascript.
+- As of mid-2013, there are many more devices running Android than ChromeOS
+17. Which of the following are examples of "Internet of Things" technologies?
+- all
+18. Which of the following are examples of "Quantified Self" technologies?
+- A wearable armband that acts as a sleep tracker and pedometer
+- An internet-connected blood glucose monitor
+- A device which you press to your temple to read and transmit your vital signs
+- A scale which uploads your weight to a personal cloud service
